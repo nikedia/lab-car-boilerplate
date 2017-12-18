@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab-car</title>
+    <!-- Bootstrap css -->
+    <!-- <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="vendors/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- main.css -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+     <!-- modal.css -->
+     <link rel="stylesheet" type="text/css" href="css/modal.css">
+    <!-- Raleway font -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- font-awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <button class="btn btn-default btn-lg orange-bg" data-toggle="modal" data-target="#myModal" type="button">Conviértete en un conductor</button>
+    <!-- Modal -->
+    <div class="modal fade modal-conductor" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body medium-gray" style="padding:40px 50px;">
+                     <!-- 'X' button -->
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <!-- form -->
+                        <!-- input question -->
+                        <div class="form-group col-md-12">
+                            <label for="inputQuestion">¿Tienes vehículo de 4 puertas?</label>
+                            <select id="inputQuestion" class="form-control white">
+                                <option selected>Elige...</option>
+                                <option>Si</option>
+                                <option>No</option>
+                            </select>
+                        </div>
+                        <!-- brand -->
+                        <div class="form-group col-md-12">
+                            <label for="inputBrand">Marca</label>
+                            <select id="inpuBrand" class="form-control white">
+                                <option selected>Modelo...</option>
+                                <option>...</option>
+                                <option>...</option>
+                            </select>
+                            <p class="help-block small">¿No ves tu vehículo en la lista? Enviar un correo electrónico a sociosndu@uber.com</p>
+                        </div>
+                        <!-- model -->
+                        <div class="form-group col-md-12">
+                            <label for="inputBrand">Modelo</label>
+                            <select id="inpuBrand" class="form-control white">
+                                <option selected>Modelo...</option>
+                                <option>...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <!-- year -->
+                        <div class="form-group col-md-12">
+                            <label for="inputYear">Año</label>
+                            <select id="inputYear" class="form-control white">
+                                <option selected>Año...</option>
+                            </select>
+                        </div>
+                        <!-- license plate -->
+                        <div class="form-group col-md-12">
+                            <label for="license-plate-car">Número de Matrícula</label>
+                            <input type="text" class="form-control white" id="license-plate-car" placeholder="Ingresa Número de Matrícula del auto">
+                            <p class="help-block small">La información de la matrícula ayuda a los clientes a identificar tu vehículo.</p>
+                        </div>
+                        <!-- 'Enviar' button -->
+                        <button type="submit" class="btn btn-success btn-block green-bg">Enviar</button>
+                    </form>
+
+
+                </div><!-- modal-body end-->
+                
+            </div> <!-- modal-content end-->
+        </div> <!-- modal-dialog end-->
+    </div> 
+
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <!-- app.js -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- google maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</body>
+</html>

@@ -1,1 +1,244 @@
-<!-- Suelta tus manos y tu mente para solucionar este reto -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab-car</title>
+    <!-- Bootstrap css -->
+    <!-- <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="vendors/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- main.css -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Raleway font -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- font-awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- button toggler -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#lab-car-nav">
+                        <span class="sr-only">Show / Hide Menu</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--lab-car logo image -->
+                    <figure>
+                        <a href="#" class="navbar-brand">
+                            <img src="assets/images/logoForma.png"  class="img-responsive" alt="lab-car logo"> 
+                        </a>
+                    </figure>
+                </div> <!-- .navbar-header end> -->
+                 <!-- menu         (navbar-right pull-right) -->
+                 <div class="collapse navbar-collapse" id="lab-car-nav">
+                    <ul class="nav navbar-nav navbar-right navbar-text">
+                        <li><a href="#">Viaja</a></li>
+                        <li><a href="#">Conduce</a></li>
+                        <li><a href="#">Inicia Sesión</a></li>
+                    </ul>   
+                </div>
+            </div> <!--container end -->    
+        </nav>
+    </header>
+
+    <!-- bg-section -->
+     <section class="container-fluid" >
+        <div class="row">
+            <div id="bg-section" class="img-responsive col-xs-12 col-md-12">
+                <!-- <img src="assets/images/taxi.jpg" alt="taxi-bg"> -->
+              <div class="clearfix">
+                 <!-- context bg box    col-centered-->
+                <div class="orange-bg context-bg-box pull-right col-xs-12 col-sm- col-md-5 col-md-offset-9 ">
+                    <h2 class="title-1">Disfruta del Viaje <br>
+                    Eres dueño de tu tiempo</h2>
+                    <h3 class="title-2">Viaja con <span><img class="white-logo-lab-car" src="assets/images/logoBlanco.png" alt="white logo lab-car"></span> </h3>
+                    <button id="text-bg-button" class="btn btn-default btn-lg " type="button">Registrate</button>
+                    <p class="line-detail-parragraph visble-sm visible-md visible-lg"><span>O bien</span></p>
+                    <button class="btn btn-default btn-lg visble-sm visible-md visible-lg" type="button">Conviértete en un conductor</button>
+                </div>
+            </div>
+           </div> 
+        </div> <!--row end -->  
+    </section>   
+
+     <!-- descarga la nueva app-section phone-section -->
+     <section class="container-fluid orange-bg">
+        <div class="row">
+            <div id="phone-section" class="img-responsive container-fluid ">
+                 <!-- bg-image -->
+                <div class="white-border img-responsive col-md-9">
+                    <figure class="col-xs-12 col-md-6 ">
+                        <img src="assets/images/iPhone6Plus.png" class="img-responsive phone-img-style" alt="iphone image">
+                    </figure>
+                    <div class="col-xs-12 col-md-6">
+                        <h2>Descarga la nueva app</h2>
+                        <p class="visble-sm visible-md visible-lg">
+                            La versión actualizada de LabCar
+                            está llena de nuevas funciones para
+                            llegar a donde quieras aún más fácil 
+                            y rápido. <br>
+                            Con solo tocar un botón, un auto 
+                            llega justo a tu ubicación, súbete y
+                            no te preocupes: tu conductor sabe 
+                            exactamente a dónde ir.
+                        </p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <!-- conduce cuando quieras-section -->
+    <section class="container-fluid">
+        <div class="row">
+            <div id="conduce-section" class="orange-bg col-xs-12 col-md-">
+              <div class="conduce-text-box pull-right col-md-4">
+                <div class="center-center">
+                    <h2>Conduce cuando quieras</h2>
+                    <p>LabCar es una opción para alcanzar
+                        tus metas financieras.
+                    </p>
+                </div>
+                <button class="btn btn-default btn-lg orange-bg" data-toggle="modal" data-target="#myModal" type="button">Conviértete en un conductor</button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                    
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                        <p>Some text in the modal.</p>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+  
+</div>
+
+             </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- tarifas-section -->
+     <section class="container-fluid orange-bg">
+        <div class="row">
+            <div class="container">
+                <div id="tarifa-section" class="col-xs-12 col-md-">
+                    <div class="col-md-5 outline">
+                        <h2>Tarifas</h2>
+                        <p>Consulta las tarifas LabCar aquí</p>
+                        <!-- form -->
+                        <div class="form-group row">
+                            <label for="place-search-input" class="col-md-1 col-form-label"><img src="assets/images/shape.png" alt="circle shape"></label>
+                            <div class="col-md-7">
+                                <input class="form-control" type="search" value="Ingrese su punto de partida" id="place-search-input">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="place-search-input" class="col-md-1 col-form-label"><img src="assets/images/shape2.png" alt="triangle shape"></label>
+                            <div class="col-md-7">
+                                <input class="form-control" type="search" value="Ingrese su destino" id="place-search-input">
+                            </div>
+                        </div>
+                        <!-- button -->
+                        <button class="btn btn-default btn-md col-md-offset-3" type="button">¡Trazar Ruta!</button>
+                    </div>
+                    <!-- <div class="clearfix"></div> -->
+                        <!-- map-image  style="width:400px;height:400px          class="google-map-style"-->
+                    <div class="col-md-6 col-md-offset-1">
+                        <figure class="">
+                            <div id="googleMap" class="" style="width:400px;height:400px" >
+                            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31208.684967896075!2d-77.02944664367058!3d-12.106290851358114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8033db388c3%3A0x73793f367683122!2sAv.+Alfredo+Benavides+1180%2C+Cercado+de+Lima+15047!5e0!3m2!1ses-419!2spe!4v1513538933820" width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>     -->
+                        </figure>
+                    </div>     
+                </div> <!-- #tarifa-section end-->
+            </div><!-- container end-->
+        </div> <!-- row end-->
+    </section>
+
+    <!-- footer-section-->
+    <footer class="container-fluid darkslategray-bg">
+        <div class="row">
+            <div class="container">
+                <!-- logo -->
+                <figure class="logo-footer col-md-4">
+                    <img class="white-logo-lab-car img-responsive" src="assets/images/logoBlanco.png" alt="white logo lab-car">
+                </figure>
+                <div class=""></div>
+            </div>  
+            <div class="container info-footer">  
+                <!-- social icons -->
+                <div class="social-icons col-md-3">
+                        <ul class="list-unstyled list-inline text-center">
+                            <li><a href="https://facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-apple" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        </ul>
+                </div>
+                <!-- links-->
+                <div class="col-md-7">
+                         <!-- 1st link block -->
+                        <div class="col-md-6">
+                            <ul class="list-unstyled links-footer">
+                                <li class=""><a href="#">Viaja</a></li>
+                                <li class=""><a href="#">Conduce</a></li>
+                                <li class=""><a href="#">Ciudades</a></li>
+                                <li class=""><a href="#">Ciudades</a></li>
+                                <li class=""><a href="#">Entregas</a></li>
+                                <li class=""><a href="#">Cómo Funciona</a></li>
+                                <li class=""><a href="#">Países</a></li>
+                                <li class=""><a href="#">Seguridad</a></li>
+                            </ul>
+                        </div>
+                        <!-- 2nd link block -->
+                        <div class="col-md-6">
+                            <ul class="list-unstyled links-footer visble-sm visible-md visible-lg">
+                                <li><a href="#">Oportunidades</a></li>
+                                <li><a href="#">Nuestra Historia</a></li>
+                                <li><a href="#">API de LabCar</a></li>
+                                <li><a href="#">Eventos</a></li>
+                                <li><a href="#">Desarrolladores</a></li>
+                                <li><a href="#">Servicios</a></li>
+                                <li><a href="#">Laboratoria</a></li>
+                                <li><a href="#">Coders</a></li>
+                             </ul>
+                        </div>    
+                    </div> <!-- links-footer end-->
+                <!-- out-brand-logo-images -->
+                <figure class="out-brand-logo col-md-2">
+                    <img src="assets/images/appstore.png" class="img-responsive" alt="appstore logo">
+                    <img src="assets/images/enBadgeWebGeneric.png" class="img-responsive" alt="google-play logo">
+                </figure>
+            </div>
+        </div>
+        <p class="container">&#169; 2017 LabCar Technologies Inc.</p>
+    </footer>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <!-- app.js -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- google maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</body>
+</html>

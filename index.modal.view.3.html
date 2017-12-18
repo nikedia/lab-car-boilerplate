@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab-car</title>
+    <!-- Bootstrap css -->
+    <!-- <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="vendors/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- main.css -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+     <!-- modal.css -->
+     <link rel="stylesheet" type="text/css" href="css/modal.css">
+    <!-- Raleway font -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- font-awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <button class="btn btn-default btn-lg orange-bg" data-toggle="modal" data-target="#myModal" type="button">Conviértete en un conductor</button>
+    <!-- Modal -->
+    <div class="modal fade modal-register" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body medium-gray" style="padding:40px 50px;">
+                     <!-- 'X' button -->
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <!-- form -->
+                        <!-- 'cuenta' button -->
+                    <button type="submit" class="btn btn-success btn-block black">¿Ya tienes una cuenta?</button>
+                    <!-- name and last name -->
+                    <form class="form-inline" role="form">
+                        <div class="form-group">
+                            <label class="sr-only" for="name"></label>
+                            <input type="text" class="form-control white" id="name" placeholder="Nombre">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="sr-only" for="last-name"></label>
+                            <input type="text" class="form-control white" id="last-name" placeholder="Apellido">
+                        </div>
+                    </form> <!-- form-inline end-->
+                    <br>
+                    <form class="form-horizontal  center-block " role="form">
+                        <!-- email -->
+                        <div class="form-group">
+                            <label for="email" class="control-label"></label>
+                            <div class="col-lg-10">
+                                <input type="email" class="form-control white" id="email" placeholder="Correo Electrónico: ejemplo@correo.com">
+                            </div>
+                        </div>
+                        <!-- phone -->
+                        <div class="form-group">
+                            <label for="phone" class=" control-label"></label>
+                            <div class="col-lg-10">
+                                <input type="number" class="form-control white" id="phone" placeholder="Teléfono">
+                            </div>
+                        </div>
+                        <!-- password -->
+                        <div class="form-group">
+                            <label for="password" class=" control-label"></label>
+                            <div class="col-lg-10">
+                                <input type="password" class="form-control white" id="password" placeholder="Contraseña">
+                            </div>
+                        </div>
+                        <!-- invitation code     -->
+                        <div class="form-group">
+                            <label for="invitation-code" class=" control-label"></label>
+                            <div class="col-lg-10">
+                                <input type="number" class="form-control white" id="invitation-code" placeholder="(Opcional) Código de Invitación">
+                            </div>
+                        </div>
+                        <!-- how do you know -->
+                        <div class="form-group col-lg-9">
+                            <label for="inputQuestion"></label>
+                            <select id="inputQuestion" class="form-control gray2">
+                                <option class="" selected>¿Cómo te enterastes de nosotros?</option>
+                                <option>Redes Sociales</option>
+                                <option>Web</option>
+                                <option>Prensa Escrita</option>
+                                <option>Otros...</option>
+                            </select>
+                        </div>
+                        <!-- 'Enviar' button -->
+                        <button type="submit" class="btn btn-success btn-block green-bg">Enviar</button>
+                    </form> <!-- form-horizontal end -->   
+                </div><!-- modal-body end-->
+                
+            </div> <!-- modal-content end-->
+        </div> <!-- modal-dialog end-->
+    </div> 
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <!-- app.js -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- google maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</body>
+</html>

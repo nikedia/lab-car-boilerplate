@@ -1,0 +1,49 @@
+/* modal conductor */
+.medium-gray {
+   background-color: #A9A9A9;
+}
+
+
+/* modal inicio-sesión */
+
+.user-img-logo {
+    width: 40%;
+    height: auto;
+}
+
+.red-text-link {
+    color: rgb(184, 18, 18); 
+}
+
+/* bg color */
+
+.green-bg {
+    background-color: #08AC9D;
+}
+
+.white {
+    background-color: #ffffff; 
+}
+
+.light-gray {
+    background-color: #F5F5F5;
+}
+
+ /* xxx */
+.border {
+    border: 1px solid rgb(169, 168, 168);
+} 
+
+.form-begin-sesion-style {
+    padding: 30px;
+}
+
+.black {
+    background-color: #000000;
+}
+
+.gray2 {
+    background-color: #949698;
+}
+
+/* modal register */

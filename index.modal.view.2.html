@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab-car</title>
+    <!-- Bootstrap css -->
+    <!-- <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="vendors/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- main.css -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- modal.css -->
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
+    <!-- Raleway font -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- font-awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <button class="btn btn-default btn-lg orange-bg" data-toggle="modal" data-target="#myModal" type="button">Conviértete en un conductor</button>
+    <!-- Modal -->
+    <div class="modal fade begin-sesion" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+            <div class="modal-content green-bg">
+                <div class="modal-header" style="padding:35px 50px;">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <img class="user-img-logo center-block" src="assets/images/user-img.png" alt="user image">
+                </div>
+                
+                <div class="modal-body"> <!-- style="padding:40px 50px;" -->
+                    <div class="row">
+                    <form role="form" class="col-xs-6 col-xs-offset-3 light-gray form-begin-sesion-style">
+                       <!-- username -->
+                        <div class="input-group">
+                            <span class="input-group-addon" id="sizing-addon2"><span class="glyphicon glyphicon-user"></span></span>
+                            <input type="text" class="form-control white border" placeholder="Ingresar usuario" aria-describedby="sizing-addon2">
+                        </div>
+                        <br>
+                        <!-- password -->
+                        <div class="input-group">
+                            <span class="input-group-addon" id="sizing-addon2"><span class="glyphicon glyphicon-lock"></span></span>
+                            <input type="text" class="form-control white border" placeholder="Ingresar contraseña" aria-describedby="sizing-addon2">
+                        </div>
+                        <!-- checkbox -->
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="" checked>Recordar contraseña</label>
+                        </div>
+                        <button type="submit" class="btn btn-lg center-block orange-bg"><span class="glyphicon glyphicon-off"></span>Login</button>
+                        <br>
+                        <p class="help-block small">¿No recuerdas tu contraseña? <a class="red-text-link" href="#">Click aquí.</a></p>
+                    </form>
+                </div>
+                </div><!-- modal-body end-->
+                
+            </div> <!-- modal-content end-->
+        </div> <!-- modal-dialog end-->
+    </div> 
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <!-- app.js -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- google maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</body>
+</html>
