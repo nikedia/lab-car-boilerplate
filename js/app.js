@@ -9,13 +9,13 @@ function myMap() {
 var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
 }
 
-// bg button
-function changeTextButton() {
-    // if(min-width: 992px)
-    // if (screen.width <= 992) 
+// // bg button
+// function changeTextButton() {
+//     // if(min-width: 992px)
+//     // if (screen.width <= 992) 
     
-    var mediaquery = window.matchMedia("(min-width: 992px)");
-    if (mediaquery.matches) {
-        document.getElementById("text-bg-button").innerHTML = "Muchas gracias!";
-    }
-}
+//     var mediaquery = window.matchMedia("(min-width: 992px)");
+//     if (mediaquery.matches) {
+//         document.getElementById("text-bg-button").innerHTML = "Muchas gracias!";
+//     }
+// }
