@@ -10,6 +10,8 @@
     <link href="vendors/bootstrap/css/bootstrap.css" rel="stylesheet">
     <!-- main.css -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- modal.css -->
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
     <!-- Raleway font -->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <!-- font-awesome -->
@@ -57,9 +59,141 @@
                     <h2 class="title-1">Disfruta del Viaje <br>
                     Eres dueño de tu tiempo</h2>
                     <h3 class="title-2">Viaja con <span><img class="white-logo-lab-car" src="assets/images/logoBlanco.png" alt="white logo lab-car"></span> </h3>
-                    <button id="text-bg-button" class="btn btn-default btn-lg " type="button">Registrate</button>
+                    <!-- <button id="text-bg-button" class="btn btn-default btn-lg " type="button">Registrate</button> -->
+                    <button id="text-bg-button"class="btn btn-default btn-lg orange-bg" data-toggle="modal" data-target="#registerModal" type="button">Registrate</button>
+                    <!-- Modal -->
+                    <div class="modal fade modal-register" id="registerModal" role="dialog">
+                        <div class="modal-dialog">
+                        <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-body medium-gray" style="padding:40px 50px;">
+                                     <!-- 'X' button -->
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <!-- form -->
+                                        <!-- 'cuenta' button -->
+                                    <button type="submit" class="btn btn-success btn-block black">¿Ya tienes una cuenta?</button>
+                                    <!-- name and last name -->
+                                    <form class="form-inline" role="form">
+                                        <div class="form-group">
+                                            <label class="sr-only" for="name"></label>
+                                            <input type="text" class="form-control white" id="name" placeholder="Nombre">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label class="sr-only" for="last-name"></label>
+                                            <input type="text" class="form-control white" id="last-name" placeholder="Apellido">
+                                        </div>
+                                    </form> <!-- form-inline end-->
+                                    <br>
+                                    <form class="form-horizontal  center-block " role="form">
+                                        <!-- email -->
+                                        <div class="form-group">
+                                            <label for="email" class="control-label"></label>
+                                            <div class="col-lg-10">
+                                                <input type="email" class="form-control white" id="email" placeholder="Correo Electrónico: ejemplo@correo.com">
+                                            </div>
+                                        </div>
+                                        <!-- phone -->
+                                        <div class="form-group">
+                                            <label for="phone" class=" control-label"></label>
+                                            <div class="col-lg-10">
+                                                <input type="number" class="form-control white" id="phone" placeholder="Teléfono">
+                                            </div>
+                                        </div>
+                                        <!-- password -->
+                                        <div class="form-group">
+                                            <label for="password" class=" control-label"></label>
+                                            <div class="col-lg-10">
+                                                <input type="password" class="form-control white" id="password" placeholder="Contraseña">
+                                            </div>
+                                        </div>
+                                        <!-- invitation code     -->
+                                        <div class="form-group">
+                                            <label for="invitation-code" class=" control-label"></label>
+                                            <div class="col-lg-10">
+                                                <input type="number" class="form-control white" id="invitation-code" placeholder="(Opcional) Código de Invitación">
+                                            </div>
+                                        </div>
+                                        <!-- how do you know -->
+                                        <div class="form-group col-lg-9">
+                                            <label for="inputQuestion"></label>
+                                            <select id="inputQuestion" class="form-control gray2">
+                                                <option class="" selected>¿Cómo te enterastes de nosotros?</option>
+                                                <option>Redes Sociales</option>
+                                                <option>Web</option>
+                                                <option>Prensa Escrita</option>
+                                                <option>Otros...</option>
+                                            </select>
+                                        </div>
+                                        <!-- 'Enviar' button -->
+                                        <button type="submit" class="btn btn-success btn-block green-bg">Enviar</button>
+                                    </form> <!-- form-horizontal end -->   
+                                </div><!-- modal-body end-->
+                                
+                            </div> <!-- modal-content end-->
+                        </div> <!-- modal-dialog end-->
+                    </div> 
+                
                     <p class="line-detail-parragraph visble-sm visible-md visible-lg"><span>O bien</span></p>
-                    <button class="btn btn-default btn-lg visble-sm visible-md visible-lg" type="button">Conviértete en un conductor</button>
+                    <!-- <button class="btn btn-default btn-lg visble-sm visible-md visible-lg" type="button">Conviértete en un conductor</button> -->
+                    <button class="btn btn-default btn-lg orange-bg visble-sm visible-md visible-lg" data-toggle="modal" data-target="#myModal" type="button">Conviértete en un conductor</button>
+                    <!-- Modal -->
+                    <div class="modal fade modal-conductor" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+                        <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-body medium-gray" style="padding:40px 50px;">
+                                     <!-- 'X' button -->
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <!-- form -->
+                                        <!-- input question -->
+                                        <div class="form-group col-md-12">
+                                            <label for="inputQuestion">¿Tienes vehículo de 4 puertas?</label>
+                                            <select id="inputQuestion" class="form-control white">
+                                                <option selected>Elige...</option>
+                                                <option>Si</option>
+                                                <option>No</option>
+                                            </select>
+                                        </div>
+                                        <!-- brand -->
+                                        <div class="form-group col-md-12">
+                                            <label for="inputBrand">Marca</label>
+                                            <select id="inpuBrand" class="form-control white">
+                                                <option selected>Modelo...</option>
+                                                <option>...</option>
+                                                <option>...</option>
+                                            </select>
+                                            <p class="help-block small">¿No ves tu vehículo en la lista? Enviar un correo electrónico a sociosndu@uber.com</p>
+                                        </div>
+                                        <!-- model -->
+                                        <div class="form-group col-md-12">
+                                            <label for="inputBrand">Modelo</label>
+                                            <select id="inpuBrand" class="form-control white">
+                                                <option selected>Modelo...</option>
+                                                <option>...</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                        <!-- year -->
+                                        <div class="form-group col-md-12">
+                                            <label for="inputYear">Año</label>
+                                            <select id="inputYear" class="form-control white">
+                                                <option selected>Año...</option>
+                                            </select>
+                                        </div>
+                                        <!-- license plate -->
+                                        <div class="form-group col-md-12">
+                                            <label for="license-plate-car">Número de Matrícula</label>
+                                            <input type="text" class="form-control white" id="license-plate-car" placeholder="Ingresa Número de Matrícula del auto">
+                                            <p class="help-block small">La información de la matrícula ayuda a los clientes a identificar tu vehículo.</p>
+                                        </div>
+                                        <!-- 'Enviar' button -->
+                                        <button type="submit" class="btn btn-success btn-block green-bg">Enviar</button>
+                                    </form>
+                                </div><!-- modal-body end-->
+                            </div> <!-- modal-content end-->
+                        </div> <!-- modal-dialog end-->
+                    </div> 
                 </div>
             </div>
            </div> 
@@ -104,34 +238,48 @@
                         tus metas financieras.
                     </p>
                 </div>
-                <button class="btn btn-default btn-lg orange-bg" data-toggle="modal" data-target="#myModal" type="button">Conviértete en un conductor</button>
+                <!-- <button class="btn btn-default btn-lg orange-bg" data-toggle="modal" data-target="#myModal" type="button">Conviértete en un conductor</button> -->
                 
+                <button class="btn btn-default btn-lg orange-bg" data-toggle="modal" data-target="#driverModal" type="button">Conviértete en un conductor</button>
                 <!-- Modal -->
-                <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal fade begin-sesion" id="driverModal" role="dialog">
                     <div class="modal-dialog">
-                    
                     <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Modal Header</h4>
-                        </div>
-                        <div class="modal-body">
-                        <p>Some text in the modal.</p>
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                    
-                    </div>
-                </div>
-  
-</div>
-
-             </div>
-            </div>
-        </div>
+                        <div class="modal-content green-bg">
+                            <div class="modal-header" style="padding:35px 50px;">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <img class="user-img-logo center-block" src="assets/images/user-img.png" alt="user image">
+                            </div>
+                            
+                            <div class="modal-body"> <!-- style="padding:40px 50px;" -->
+                                <div class="row">
+                                <form role="form" class="col-xs-6 col-xs-offset-3 light-gray form-begin-sesion-style">
+                                   <!-- username -->
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="sizing-addon2"><span class="glyphicon glyphicon-user"></span></span>
+                                        <input type="text" class="form-control white border" placeholder="Ingresar usuario" aria-describedby="sizing-addon2">
+                                    </div>
+                                    <br>
+                                    <!-- password -->
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="sizing-addon2"><span class="glyphicon glyphicon-lock"></span></span>
+                                        <input type="text" class="form-control white border" placeholder="Ingresar contraseña" aria-describedby="sizing-addon2">
+                                    </div>
+                                    <!-- checkbox -->
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" checked>Recordar contraseña</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-lg center-block orange-bg"><span class="glyphicon glyphicon-off"></span>Login</button>
+                                    <br>
+                                    <p class="help-block small">¿No recuerdas tu contraseña? <a class="red-text-link" href="#">Click aquí.</a></p>
+                                </form>
+                            </div><!-- row end-->
+                            </div><!-- modal-body end-->
+                        </div> <!-- modal-content end-->
+                    </div> <!-- modal-dialog end-->
+                </div> 
+            </div> 
+        </div> 
     </section>
 
      <!-- tarifas-section -->
